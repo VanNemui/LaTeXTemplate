@@ -1,0 +1,58 @@
+\documentclass{article}
+
+\begin{document}
+
+\section*{LỜI NÓI ĐẦU} % dấu * để không đánh dấu trang
+\thispagestyle{empty}
+Phàn này trình bày một cách khái quát(khoảng 1-2 trang) về bối cảnh hình thành và mục đích của đồ án, project. Lời cảm ơn với những tổ chức và cá nhân góp phần trong việc hoàn thiện đồ án nên đặt ở cuối mục này.
+
+\cleardoublepage
+\section*{LỜI CAM ĐOAN} % dấu * để không đánh dấu trang
+\thispagestyle{empty}
+TÔI tên là Nguyễn Ánh Vân, mssv 20205045, sinh viên lớp, khóa, người hướng dẫn là. tôi xin cam đoan toàn bộ nội dung được trình bày trong đồ án *tên* là kết quả quá trình tìm hiểu và nghiên cứu của tôi. các dữ liệu được nêu trong đồ án là hoàn toàn trung thực, phản ánh kết quả đo đạt thực tế. mọi thông tin trích dẫn đều tuân thủ các quy định về sở hữu trí tuệ: các tài liệu tham khảo được liệt kê rõ ràng. tôi xin chịu hoàn toàn trách nhiệm với những nội dung được viết trong đồ án này.
+
+\vspace{6pt}
+\hspace{7cm}
+Hà Nội, ngày 30 tháng 1 năm 2023
+
+\hspace{9cm}\textbf{Người cam đoan} 
+\vspace{2cm}
+
+\hspace{8.65cm} \textbf{NGUYỄN ÁNH VÂN}
+\cleardoublepage
+
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\tableofcontents % tạo mục lục tự động
+\thispagestyle{empty}
+\cleardoublepage
+
+\pagenumbering{roman} %số trang bằng chữ la mã
+\section*{DANH MỤC KÝ HIỆU VÀ CHỮ VIẾT TẮT}
+\phantomsection
+\addcontentsline{toc}{section}{\numberline{} DANH MỤC KÝ HIỆU VÀ CHỮ VIẾT TẮT}
+\cleardoublepage
+
+{
+\let\oldnumberline\numberline
+\renewcommand{\numberline}{\figurename~\oldnumberline}
+\listoffigures} % tạo danh mục hình tự động
+\phantomsection
+\addcontentsline{toc}{section}{\numberline{} DANH MỤC HÌNH vẼ}
+\cleardoublepage
+
+{
+\let\oldnumberline\numberline
+\renewcommand{\numberline}{\tablename~\oldnumberline}
+\listoftables}
+\phantomsection
+ % tạo danh mục bảng biểu tự động
+\addcontentsline{toc}{section}{\numberline{} DANH MỤC BẢNG BIỂU}
+\cleardoublepage
+
+\section*{TÓM TẮT ĐỒ ÁN}
+\phantomsection
+\addcontentsline{toc}{section}{\numberline{} TÓM TẮT ĐỒ ÁN}
+phần này trình bày những mục đích, các kết luận quan trọng nhất của đồ án bằng cả tiếng việt và tiếng anh.
+\cleardoublepage
+
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}% phông chữ
+\usepackage[T5]{fontenc} %sử dụng tiếng việt
+\usepackage[fontsize=13pt]{scrextend} % set font
+\usepackage[paperheight=29.7cm, paperwidth=21cm, right=2cm, 
+            left=3cm, top=2cm,bottom = 2.5cm]{geometry} % chuan A4, can le phai, trai, tren, duoi
+\usepackage{mathptmx} %time new roman
+\usepackage{graphicx} % chen anh
+\usepackage{float} % set vi tri chen anh
+\usepackage{tikz} % thu vien tao khung bia
+\usetikzlibrary{calc} %thu vien tikz
+\usepackage{indentfirst} % thư viện thụt đầu dòng
+\renewcommand{\baselinestretch}{1.2} % dãn dòng 1.2
+\setlength{\parskip}{6pt} % spacing after
+\setlength{\parindent}{1cm} % xét khoảng cách thụt đầu dòng mỗi đoạn
+\usepackage{titlesec} % thư viện setup font chữ
+\setcounter{secnumdepth}{4} % có 4 heading
+\titlespacing*{\section}{0pt}{0pt}{30pt} %heading 1 section
+\titleformat*{\section}{\fontsize{16pt}{0pt}\selectfont \bfseries \centering}
+
+\titlespacing*{\subsection}{0pt}{10pt}{0pt} %heading 2 subsection
+\titleformat*{\subsection}{\fontsize{14pt}{0pt}\selectfont \bfseries}
+
+\titlespacing*{\subsubsection}{0pt}{10pt}{0pt} %heading  subsubsection
+\titleformat*{\subsubsection}{\fontsize{13pt}{0pt}\selectfont \bfseries \itshape}
+
+\titlespacing*{\paragraph}{0pt}{10pt}{0pt} %heading 4
+\titleformat*{\paragraph}{\fontsize{13pt}{0pt}\selectfont \itshape}
+
+% thiết lập phần mô tả dưới hình được trích dẫn
+\renewcommand{\figurename}{\fontsize{12pt}{0pt}\selectfont \bfseries Hình}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}} % được ghi bằng phần.1, .2,...
+\usepackage{caption}
+\captionsetup[figure]{labelsep= space} % bỏ dấu ":". từ "Hình 1.1:" chuyển thành "Hình 1.1 "
+
+% thiết lập phần mô tả trên bảng được trích dẫn
+\renewcommand{\tablename}{\fontsize{12pt}{0pt}\selectfont \bfseries Bảng}
+\renewcommand{\thetable}{\thesection.\arabic{table}} % được ghi bằng phần.1, .2,...
+\captionsetup[table]{labelsep= space} % bỏ dấu ":". từ "Hình 1.1:" chuyển thành "Hình 1.1 "
+\usepackage{tabularx}
+\newcolumntype{s}{>{\hsize= 0.4\hsize}X} 
+\newcolumntype{a}{>{\hsize= 1.1\hsize}X}
+
+\renewcommand{\theequation}{\thesection.\arabic{equation}} % thay đổi đánh số phương trình mặc định
+
+\newtheorem{theorem}{Định lý} % khởi tạo định lý
+\newtheorem{defn}[theorem]{Định nghĩa}
+\newtheorem{corollary}[theorem]{Hệ quả}
+\newtheorem{lemma}[theorem]{Bổ đề}
+
+\usepackage{lipsum} % THƯ viện tạo chữ linh tinh
+
+\renewcommand{\contentsname}{MỤC LỤC}
+
+\usepackage[unicode]{hyperref}% nhảy đến địa chỉ khi nhấn vào mục lục
+
+
+\begin{document}
+\end{document}
